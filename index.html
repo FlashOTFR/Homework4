@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>QUIZ TIME!</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="highscore.html">HIGH SCORES</a>
+
+      <div id="counter"></div>
+    </header>
+
+    <container>
+      <div class="row">
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8"></div>
+
+        <div class="col-2"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8">
+          <div id="mainCont">
+            <h1 id="frontPage">Welcome to the Quiz!</h1>
+
+            <br />
+
+            <p id="frontPage">Now is your chance to prove your knowledge!</p>
+
+            <br />
+
+            <p id="frontPage">Press start to test your mettle!</p>
+
+            <br />
+
+            <button type="button" class="btn btn-primary" id="start">
+              START QUIZ
+            </button>
+          </div>
+          <section id="quizzle">
+            <div id="question"></div>
+
+            <button type="button" class="btn btn-primary" id="c1">
+              Primary
+            </button>
+            <button type="button" class="btn btn-primary" id="c2">
+              Primary
+            </button>
+            <button type="button" class="btn btn-primary" id="c3">
+              Primary
+            </button>
+            <button type="button" class="btn btn-primary" id="c4">
+              Primary
+            </button>
+
+            <div id="result"></div>
+          </section>
+        </div>
+
+        <div class="col-2"></div>
+      </div>
+    </container>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="questions.js"></script>
+
+    <script src="script2.js"></script>
+  </body>
+</html>
